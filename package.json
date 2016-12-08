@@ -1,0 +1,16 @@
+{
+  "name": "lookup-server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run server",
+    "client": "cd client && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "3.1.0"
+  },
+  "dependencies": {
+    "concurrently": "^3.1.0"
+  }
+}
